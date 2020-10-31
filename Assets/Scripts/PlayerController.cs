@@ -96,11 +96,20 @@ public class PlayerController : MonoBehaviour
         transform.position = spawnPoint;
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "killBox")
         {
             transform.position = spawnPoint;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("pickup"))
+        {
+            GameManager.Instance.Score += collision.gameObject.GetComponent<Pickup>().score;
+            Destroy(collision.gameObject);
         }
     }
 }
