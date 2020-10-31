@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     [SerializeField] private float jumpHeight;
     private bool isOnGround;
-    private Vector3 spawnPoint;
+    [SerializeField] private Vector3 spawnPoint;
 
     [SerializeField] private Transform groundCheck;
     [SerializeField] private float groundCheckRadius;
@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
         transform.position = spawnPoint;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "killBox")
         {
