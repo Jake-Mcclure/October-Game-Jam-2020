@@ -143,7 +143,7 @@ public class PlayerController : MonoBehaviour
         {
             GameManager.Instance.Score += collision.gameObject.GetComponent<Pickup>().score;
             Destroy(collision.gameObject);
-            animator.SetBool("PickUp", true);
+            // animator.SetBool("PickUp", true);
         }
 
         if (collision.CompareTag("killBox"))

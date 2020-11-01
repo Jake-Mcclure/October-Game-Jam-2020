@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94e13118241af94c95759a33ecdbed2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  jumpHeight: 5
+  moveSpeed: 5
+  jumpHeight: 7
   spawnPoint: {x: 0, y: 0, z: 0}
   groundCheck: {fileID: 8236225649544099885}
   groundCheckRadius: 0.5

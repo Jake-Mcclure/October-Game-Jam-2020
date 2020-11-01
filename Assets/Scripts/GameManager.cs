@@ -1,16 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
 public class GameManager : Singleton<GameManager>
 {
     [SerializeField] private int score;
+    [SerializeField] private TextMeshProUGUI scoreText;
 
     public int Score { get => score; 
         set
         {
             score = value;
+            scoreText.text = "x" + score.ToString();
         }
     }
 

@@ -11,7 +11,8 @@ public class CameraMovement : MonoBehaviour
     public float speed;
     public bool isDragging;
 
-    private GameObject thePlayer;
+    private GameObject player;
+    private GameObject background;
 
     //x - min y - max
     public Vector2 minMaxXPosition;
@@ -24,7 +25,8 @@ public class CameraMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        thePlayer = GameObject.Find("Player");
+        player = GameObject.Find("Player");
+        background = GameObject.Find("Background");
         screenWidth = Screen.width;
         screenHeight = Screen.height;
     }
@@ -62,9 +64,10 @@ public class CameraMovement : MonoBehaviour
         }
         if (!isDragging)
         {
-            Vector3.MoveTowards(transform.position, new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y, -10), 100);
-            transform.position = new Vector3(thePlayer.transform.position.x, thePlayer.transform.position.y, -10);
+            Vector3.MoveTowards(transform.position, new Vector3(player.transform.position.x, player.transform.position.y, -10), 100);
+            transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
         }
+        background.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
     }
 
     float MoveSpeed()
