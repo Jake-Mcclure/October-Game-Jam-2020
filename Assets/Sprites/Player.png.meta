@@ -4,22 +4,22 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -2311659948842064771
-    second: Player_0
+    second: idle1
   - first:
       213: 7364682651488144517
-    second: Player_1
+    second: idle2
   - first:
       213: -6287787046888575383
-    second: Player_2
+    second: collectible
   - first:
       213: -1182821291677670348
-    second: Player_3
+    second: walk1
   - first:
       213: -4709456396536258026
-    second: Player_4
+    second: walk2
   - first:
       213: -4529042392078601758
-    second: Player_5
+    second: walk3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -107,7 +107,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_0
+      name: idle1
       rect:
         serializedVersion: 2
         x: 0
@@ -115,7 +115,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,7 +128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_1
+      name: idle2
       rect:
         serializedVersion: 2
         x: 128
@@ -136,7 +136,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,7 +149,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_2
+      name: collectible
       rect:
         serializedVersion: 2
         x: 256
@@ -157,7 +157,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,7 +170,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_3
+      name: walk1
       rect:
         serializedVersion: 2
         x: 0
@@ -178,7 +178,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,7 +191,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_4
+      name: walk2
       rect:
         serializedVersion: 2
         x: 128
@@ -199,7 +199,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +212,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_5
+      name: walk3
       rect:
         serializedVersion: 2
         x: 256
@@ -220,7 +220,7 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
